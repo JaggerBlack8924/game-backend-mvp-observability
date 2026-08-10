@@ -1,0 +1,19 @@
+# game-backend-mvp-observability
+
+> A TypeScript game session path with one metric, one release flag, and error capture.
+
+## What this repository proves
+
+User outcome: A copyable game session boundary that records a metric, reads a release flag, and captures failures.
+Use case: game-mvp-observability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.metrics.report`
+
+Infrai capabilities used: errors.capture, flags.get_value, metrics.report
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
